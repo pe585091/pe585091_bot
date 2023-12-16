@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
-stock = ["00919", "3147", "2330"]  # 要爬股票
+stock = ["00919", "2618", "2330"]  # 要爬股票
 for i in range(len(stock)):  # 迴圈
     stockid = stock[i]  # 把股票塞入 0>1
     url = "https://tw.stock.yahoo.com/quote/" + stockid + ".TW"  # 上市
