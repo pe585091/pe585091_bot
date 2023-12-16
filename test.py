@@ -36,10 +36,9 @@ for i in range(len(stock)):  # 迴圈
     message = f"{name} {stockid}的價格為: {price}"  # 回傳得訊息
     print(message)
 
-    token = "MTE4NTUyODYyODE0NzEyNjMyMg.GeusqA.CgrOnMIfF55h33PkrXXSHTq0s4GCbTBZ0EpV6A" #bot token
-    chat_id = "1185528628147126322" #使用者id
-    #url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}" #發送訊息
-    url = f"https://discord.com/api/webhooks/{chat_id}/{token}"
+    token = "6533554806:AAEH45JruGFyxmf24_ZpsBBhfK_wIJ0Q7Zc" #bot token
+    chat_id = "6910898574" #使用者id
+    url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}" #發送訊息
     requests.get(url)
     time.sleep(3)
 
